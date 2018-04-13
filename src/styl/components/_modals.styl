@@ -1,0 +1,282 @@
+.modal-overlay
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // display: flex;
+  // justify-content: center;
+  // align-items: flex-start;
+  // +above('s')
+  //   align-items: center;
+  // z-index: $cloud - 1;
+  // animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1) forwards;
+  // pointer-events none
+  // background: rgba(#000,0.96);
+  // @supports (backdrop-filter blur(5px))
+  //   backdrop-filter blur(5px)
+  //   background: rgba(#000,0.9);
+  // .modal-open &
+  //   animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1) forwards;
+
+.modal
+   //transform translateZ(0)
+   &__overlay
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: $cloud;
+      background-color: rgba(#00aaee, .32)
+      //background-color: rgba(#7896ee, .5)
+      //backdrop-filter blur(5px)
+      max-height 100vh
+      overflow-y: auto;
+      overflow-x hidden
+      text-align: center
+      white-space nowrap
+      font-size 0
+      -webkit-overflow-scrolling touch
+      &::before
+        content ''
+        width 0
+        height 100vh    
+        display inline-block
+        vertical-align middle
+   &__inner-wrapper
+      max-width: 80rem;
+      width: 100%
+      display inline-block
+      vertical-align middle
+      white-space normal
+      position relative
+   &__inner
+      width: 100%
+      max-width: 80rem;
+      width: 100%
+      display inline-block
+      vertical-align middle
+      white-space normal
+      position relative
+      font-size 1.8rem
+      padding: 4rem
+      background-color: #FFF
+      box-shadow: 1rem 1.2rem 0rem 0px #e8e8e8, 5.2709rem 6.2816rem 3.2rem 0px rgba(37, 119, 157, 0.25);
+      border-radius 1.5rem
+      +above('l')
+         padding: 3rem 5rem 5rem
+   &__container
+      border-radius: 1rem;
+      width 100%
+      
+      color $black
+      text-align center
+      
+      //-webkit-overflow-scrolling touch
+      //background-color #fff
+   &__close
+      @extend .btn-base
+      position absolute
+      padding 2rem
+      top 0
+      right 0
+      +above('s')
+         top 2.5rem
+         right 2rem
+      svg
+        height 1.5rem
+        width 1.5rem
+        fill $lightBlue
+        //pointer-events none
+      
+
+
+
+
+
+/**************************\
+  Demo Animation Style
+\**************************/
+@keyframes mmfadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes mmfadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+
+@keyframes mmslideIn {
+  from { transform: translate3d(0,15%, 0); }
+    to { transform: translate3d(0,0, 0); }
+}
+
+@keyframes mmslideOut {
+    from { transform: translate3d(0,0, 0); }
+    to { transform: translate3d(0,-10%, 0); }
+}
+
+.micromodal-slide {
+  display: none;
+}
+
+.micromodal-slide.is-open {
+  display: block;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay
+   // animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1) forwards;
+   // .isIOS &
+   //   opacity 1
+   //   animation none
+   // +above('l')
+   animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1) forwards;
+
+.micromodal-slide[aria-hidden="false"] .modal__container
+  //animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1) forwards;
+
+.micromodal-slide[aria-hidden="true"] .modal__overlay
+   // animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1) forwards;
+   // .isIOS &
+   //    opacity 0
+   //    animation none
+   //  +above('l')
+   animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1) forwards;
+
+.micromodal-slide[aria-hidden="true"] .modal__container
+  //animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1) forwards;
+
+
+//////////////////////////////////////
+
+.modal-request
+   &__inner-wrapper
+      position relative
+      // &::before
+      //    content ''
+      //    width (100rem / 1.6)
+      //    height (114rem / 1.6)
+      //    background-image resolve('arrow-decor.svg')
+      //    position absolute
+      //    top -17rem
+      //    left -6rem
+      //    background-size contain
+      //    //max-height 100vh
+   &__inner-wrapper,
+   &__inner
+      max-width (60rem / 1.2)
+   &__title
+      font-size (4.8rem / 1.2)
+      font-weight bold
+      color $lightBlue
+      text-align left
+   &__desc
+      font-size (3.2rem / 1.2)
+      text-align left
+      font-weight bold
+      margin-bottom .8em
+      
+.request-form
+   text-align left
+   .field-wrapper
+      margin-bottom 2.5rem
+
+
+
+.modal-success
+   &__title
+      font-weight bold
+      font-family 'Open Sans',sans-serif;
+      margin-bottom .1em
+      
+      font-size (4.8rem / 1.2)
+      font-weight bold
+      color $lightBlue
+      text-align center
+      +above('s')
+         text-align left
+   &__status
+      //background-color #00aaee
+      width calc(100% + 8rem)
+      margin -4rem -4rem 0
+      padding 2rem 0 0
+      +above('s')
+         margin 0
+         padding 0
+         width (27rem / 1.2)
+         position absolute
+         top 0
+         left 0
+         bottom 0
+      color $white
+      font-size 3.5rem
+      font-weight bold
+      display flex
+      align-items center
+      justify-content center
+      flex-direction column
+      svg
+         height 8rem
+         width 8rem
+         margin-bottom 1rem
+         +above('s')
+            height 13rem
+            width 13rem
+            margin-bottom 2rem
+         margin-left auto
+         margin-right auto
+         fill $white
+   &__inner
+      max-width (63rem / 1.2)
+      position relative
+      min-height (30rem / 1.2)
+      overflow hidden
+   
+      
+   &__desc
+      font-size (3.2rem / 1.2)
+      text-align left
+      font-weight bold
+      margin-bottom 1.4em
+   &__message
+      text-align center
+      +above('s')
+         padding-left 18rem
+         text-align left
+      font-family $font-therd
+      p
+         margin-bottom 1em
+         
+
+
+.request-status
+  background-color #f7f7f7
+  margin 0 -4rem 
+  margin-bottom 2rem
+  +above('l')
+    margin 0 -5rem 
+    margin-bottom 2rem
+  padding 2.5rem
+  padding-left 11rem
+  position relative
+  font-size 1.8rem
+  +above('s')
+    font-size 2rem
+  text-align left
+  svg
+    height 4rem
+    width 4rem
+    position absolute
+    top 2rem
+    left 5rem
+    fill #4c5f67
+    
+
+.request-default-email
+  color #4d5f67
+  margin-top -.6rem
+  
+.request-default-email-radio
+  //margin-bottom 1.2rem

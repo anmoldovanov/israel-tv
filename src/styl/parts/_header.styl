@@ -1,0 +1,223 @@
+.header-top
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid #ccc;
+   background-color #fff
+   &__content
+      display flex
+      justify-content space-between
+      align-items center
+      font-size 1.2rem
+      padding .5rem 0
+   &__container
+      +below('xs')
+         padding 0 .5rem
+      
+.site-name
+   font-size 1.2rem
+   font-weight 600
+
+.langs
+   display flex
+   justify-content center
+   &__item:not(:first-of-type)
+      position relative
+      &::before
+         content '|'
+         position absolute
+         top 0rem
+         bottom .3rem
+         right -.4rem
+         font-weight bold
+         color $black
+         speak none
+         //width 2px
+         //background-color $black
+   &__link
+      display block
+      padding 0 .7rem
+      +above('s')
+         padding 0 1rem
+   img
+      width 2rem
+      
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+.header
+   margin-bottom 3rem
+
+.header-middle
+   background-color #6ea6dc
+   padding 1rem 0
+   color $white
+   background: linear-gradient(#7EBDFB, #5C8CBB);
+   &__left
+      +below('xs')
+         display none
+   &__content
+      display flex
+      justify-content space-between
+      align-items center
+   &__right
+      //text-align right
+   &__container
+      +below('xs')
+         padding 0 .5rem
+      
+
+.logo
+   background-color #fff
+   font-size 3.3rem
+   color #00c3e4
+   text-transform uppercase
+   display inline-block
+   margin-top -1rem
+   padding .5rem 2rem 1.5rem
+   border-radius 0 0 1rem 1rem
+   margin-bottom .5rem
+   +below('xs')
+      display none
+   span
+      color #0087c2
+   &:hover
+      color #00c3e4
+   &__desc
+      font-size 1.4rem
+      color $black
+      font-weight 600
+
+.header-date
+   font-size 1.2rem
+   color #e6e4e4
+   font-weight 600
+   display flex
+   &__time
+      color $white
+      margin-right .5rem
+   i
+      margin-left .4rem
+      display block
+
+
+.user-auth-buttons
+   .btn
+      &:not(:first-child)
+         margin-right .5rem
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+.menu-toggler
+   position absolute
+   top 1.5rem
+   right 0
+   +above('s')
+      display none
+   svg
+      height 3rem
+      width 3rem
+      fill #5f91c1
+   
+
+.header-bottom
+   border-bottom 1px solid #cbcbcb
+   background-color #fff
+   +below('xs')
+      .stat-link
+         position absolute
+         top 1.5rem
+         left 0
+   &__content
+      position relative
+      padding 5rem 0 1.2rem
+      +above('s')
+         padding 1.2rem 0
+         display flex
+         justify-content space-between
+         align-items stretch
+.main-nav
+   //font-size 1.8rem
+   font-size 1.8rem
+   // +above('hd')
+   //    font-size 2.8rem
+   text-transform uppercase
+   +below('xs')
+      display none
+   +above('s')
+      align-items stretch
+      display flex !important
+   &__list
+      +above('s')
+         display flex
+         align-items stretch
+      margin-left -.6em
+   &__item
+      +above('s')
+         display flex
+         align-items stretch
+   &__link
+      display block
+      padding .5em 0
+      +below('xs')
+         &:hover
+            color $orange
+         &.current
+            color $orange
+      +above('s')
+         position relative
+         display flex
+         align-items center
+         padding 0 .6em .2em
+         &::before
+            content ''
+            position absolute
+            bottom -1.2rem
+            left .6em
+            right .6em
+            height 2px
+            background-color $orange
+            opacity 0
+            transition .2s
+         &:hover::before
+            opacity .5
+      &.current
+         pointer-events none
+         &::before
+            opacity 1
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+.breadcrumbs
+   padding 2.5rem 0
+   font-weight 100
+   font-size 2rem
+   //direction: rtl;
+   // +above('hd')
+   //    font-size 2.4rem
+   &__list
+      display flex
+      list-style none
+      //justify-content flex-end
+   &__item
+      display flex
+      align-items center
+   i
+      svg-icon(1.6rem)
+      margin .5rem 1.5rem 0
+      fill #03b3db
+      transform scaleX(-1)
+   &__link
+      span
+         border-bottom 1px solid
+         transition .2s
+      &:hover span
+         border-bottom-color transparent
+   &__item--current &__link
+      color #06a3d2
+      pointer-events none
+      span
+         border-bottom-color transparent
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+

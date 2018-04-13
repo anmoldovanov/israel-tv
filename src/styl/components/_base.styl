@@ -1,0 +1,251 @@
+@import '../../bower_components/normalize-css/normalize.css'
+
+
+rupture.scale =              0       481px       769px      1180px       1280px       1700px      1800px
+//                         └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘  └────┬────┘  └────┬────
+// Slice numbers:               1           2           3           4           5            6            7
+rupture.scale-names =      "xs"        "s"         "m"         "l"         "xl"         "xxl"        "hd"
+
+// //  Перенос контрольных точек в js
+// scalesLength = length(rupture.scale)
+// mediaQueriesJSON = '{ '
+// for name, i in rupture.scale-names
+//    value = rupture.scale[i]
+//    if i != scalesLength - 1
+//       mediaQueriesJSON += '%s: "%s",' % (name value)
+//    else
+//      mediaQueriesJSON += '%s: "%s" }' % (name value) 
+
+// body::after
+//    content mediaQueriesJSON
+//    clip: rect(1px, 1px, 1px, 1px);
+//    position: absolute !important;
+//    height: 0;
+//    width: 0;
+//    overflow: hidden;
+   
+// z-index
+$underground = -3
+$sea         = 0
+$land        = 3
+$hill        = 6
+$mountain    = 9
+$cloud       = 12
+$moon        = 15
+$sun         = 23
+
+@import '_colors.styl'
+@import '_fonts.styl'
+
+
+
+*
+   background-repeat: no-repeat;
+   padding: 0;
+   margin: 0;
+*,
+::before,
+::after
+   box-sizing: inherit
+
+::before,
+::after
+   text-decoration: inherit;
+   vertical-align: inherit;
+   background-repeat: no-repeat;
+
+ul
+   list-style none
+img
+   max-width: 100%;
+   height: auto;
+   -ms-interpolation-mode: bicubic;
+   display: inline-block;
+   vertical-align: middle;
+html
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+   box-sizing border-box
+   font-size: 2.6vw;
+   //font-size 9px
+   //font-size: 2.3vw;
+   // font-size: 2.3vw;
+   // +above('s')
+   //    font-size: .9vw;
+   //+above('m')
+   +above('s')
+      font-size: 1.1vw;
+      //font-size: calc(20% + .47vw);
+      //font-size 9px
+      //font-size: calc(20% + .47vw);
+   +above('m')
+      font-size: .92vw;
+   +above('l')
+      font-size: .85vw;
+   +above('xl')
+      font-size: 9px;
+   +above('xxl')
+      font-size: 11px;
+      //font-size: calc(min(1rem max(5rem calc(.5rem + 2vw + 2vh))))
+      //font-size: calc(20% + .47vw);
+
+body
+   //min-width: 1024px
+
+html,
+body
+   height: 100%;
+   //min-height 100%
+   //min-height 100vh
+body
+   position relative
+   padding: 0
+   font-size 1.6rem
+   font-style: normal
+   font-weight: normal
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   font-size-adjust: auto
+   cursor: auto
+   overflow-x hidden
+.main-wrapper
+   //max-width 100vw
+   width 100%
+   //min-width: 1024px
+   //overflow-x hidden
+   
+svg
+   fill inherit
+   color inherit
+   height inherit
+   width inherit
+   transition inherit
+   overflow visible
+   &:not(:root)
+      overflow visible
+   
+.clearfix
+   &::before,
+   &::after
+      content: ""
+      display: table
+      clear: both
+
+[hidden],    
+.hidden,
+.hide
+   display: none !important
+   
+.no-select
+   -webkit-touch-callout: none
+   user-select: none
+
+sr-only = 
+   clip: rect(1px, 1px, 1px, 1px);
+   position: absolute !important;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+.sr-only,
+.screen-reader-text
+   {sr-only}
+
+html:not(.isOperaMini) .opera-mini-only
+   {sr-only}
+   
+operaMini()
+   .operaMini &
+      {block}
+      
+supports-backdrop-filter()
+   @supports (backdrop-filter: blur(1px))
+      {block}
+      
+is-firefox()
+   @-moz-document url-prefix()
+      {block}
+   
+// :focus,
+// a:focus
+//    outline 3px solid #666
+:focus
+   outline none
+[data-whatinput="mouse"] :focus,
+[data-whatinput="touch"] :focus
+   outline none
+   
+
+.hide-below-xs
+   +below('xs')
+      display none !important
+.hide-below-s
+   +below('s')
+      display none !important
+.hide-below-m
+   +below('m')
+      display none !important
+.hide-below-l
+   +below('l')
+      display none !important
+.hide-below-xl
+   +below('xl')
+      display none !important
+      
+.hide-above-xs
+   +above('xs')
+      display none !important
+.hide-above-s
+   +above('s')
+      display none !important
+.hide-above-m
+   +above('m')
+      display none !important
+.hide-above-l
+   +above('l')
+      display none !important
+.hide-above-xl
+   +above('xl')
+      display none !important
+      
+
+.active > .hide-active
+   display none
+:not(.active) > .hide-no-active
+   display none
+   
+
+lh(fontSize, pointSize)
+   100% * (pointSize / fontSize)
+      
+
+svg
+   display block
+   
+
+svg-icon(w, h = w)
+   display block
+   position relative
+   width w
+   height h
+   svg
+      position absolute
+      top 0
+      left 0
+      right 0
+      bottom 0
+      
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+   

@@ -1,0 +1,226 @@
+label
+   display inline-block
+   vertical-align middle
+
+.input-base
+   width auto
+   font-family: inherit;
+   background transparent
+   -webkit-appearance: none;
+   -moz-appearance: none; 
+   vertical-align: middle
+   font-family inherit
+   border none
+   border-radius 0
+   line-height 1
+   transition .2s
+   &::-ms-expand
+      display: none;
+   &::placeholder
+      line-height: normal;
+      line-height 2.9rem
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   margin: 0; 
+   
+input[type=number]
+   -moz-appearance:textfield;
+
+
+
+
+
+
+.field-input,
+.field-textarea,
+.field-select
+   @extend .input-base
+   //width 100%
+   padding 0 1em .2em;
+   border 1px solid #00aaee
+   //border-radius $g-border-radius
+   background-color transparent
+   color $black
+   font-size (2.4rem / 1.2)
+   //border 1px solid $red
+   line-height 2.5em
+   font-weight bold
+   direction: ltr;
+   //font-weight bold
+   //text-transform uppercase
+   width 100%
+   background-color #fff
+   border-radius 2rem
+   transition .2s
+   &:focus
+      //border-color $black
+   &.invalid
+      //color $red
+      border 1px solid $red
+      border-color $red
+      animation: shake .5s linear;
+   &[readonly],
+   &[disabled]
+      color rgba($black, .6)
+   &::placeholder
+      color $black
+      opacity 1
+      line-height 9rem
+      font-weight 400
+   &--small
+      font-size 1.6rem
+      line-height 7rem
+      &::placeholder
+         line-height 7rem
+   
+
+.field-wrapper
+   width 100%
+   //display flex
+   //margin-bottom 2rem
+   align-items center
+   position relative
+   font-size (2.4rem / 1.2)
+   &__title
+      margin-right 2rem
+      position absolute
+      top .6em
+      left 1.2em
+      transition .2s
+   .field-input.invalid ~ &__title
+      color $red
+      animation: shake .5s linear;
+   &__error
+      color #ec5900
+      font-size 1.5rem
+      margin-top 1rem
+      margin-left 2rem
+      display none
+   .field-input.invalid ~ &__error
+      display block
+
+
+.field-select
+   height 4rem
+   padding-right 2.5em
+   //background-image resolve('select.svg')
+   background-repeat no-repeat
+   background-size .7em
+   background-position right .8em center
+
+
+
+.field-secondary,
+.field-secondary-textarea,
+.field-secondary-select
+   @extend .input-base
+   padding 0 1em .1em;
+   color $white
+   font-size 1.5rem
+   line-height 2.5em
+   font-weight 600
+   background-color #1A2050
+   border-radius .5rem
+   &::placeholder
+      line-height 2.5em
+      font-weight 400
+   &:focus
+      background-color #242c67
+
+.field-textarea,
+.field-secondary-textarea
+   padding 1em
+   max-width 100%
+   overflow auto
+   line-height 1.4
+   &::placeholder
+      line-height 1.4
+
+.field-secondary-select
+   height (2.5em + .1em)
+   padding-right 2.5em
+   //background-image resolve('triangle-down.svg')
+   background-repeat no-repeat
+   background-size .7em
+   background-position right .8em center
+   
+
+@keyframes invalidArrow
+   0%
+      transform translateX(0)
+   25%
+      transform translateX(-.3rem)
+   50%
+      transform translateX(0)
+   75%
+      transform translateX(-.3rem)
+   100%
+      transform translateX(0)
+
+.checkbox,
+.radio
+   padding .5rem 0 .5rem 0
+   cursor pointer
+   &__input
+      @extend .sr-only
+   &__content
+      position relative
+      padding-left 5rem
+      min-height 5rem
+      display flex
+      align-items center
+      text-align left
+      &::before
+         content ''
+         position absolute
+         top .5rem
+         left 0
+         height 4.5rem
+         width 4.5rem
+         border-radius 50%
+         background-color #fff
+         background-image resolve('unchecked.png')
+         background-size contain
+   &__input:checked ~ &__content
+      &::before
+         background-image resolve('checked.png')
+
+.radio
+   &__content::before
+      border-radius 50%
+      background-size 60%
+      background-position center top .7rem
+   :checked ~ &__content
+      &.checkbox-green::before
+         background-color $green
+      &.checkbox-red::before
+         background-color $red
+         
+
+
+@keyframes shake {
+    8%, 41% {
+        transform: translateX(-1rem);
+    }
+    25%, 58% {
+        transform: translateX(1rem);
+    }
+    75% {
+        transform: translateX(-.5rem);
+    }
+    92% {
+        transform: translateX(.5rem);
+    }
+    0%, 100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+      

@@ -1,0 +1,195 @@
+// // Text reset 
+
+// .text-center
+//    text-align center !important
+// .text-left
+//    text-align left !important
+// .text-right
+//    text-align right !important
+   
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+   margin 0
+p
+   font-size: inherit;
+   line-height: 1.4;
+   +above('s')
+      line-height: 1.4;
+   text-rendering: optimizeLegibility;
+   //font-weight 300
+   & + p
+      margin-top .7em
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+   font-weight: inherit;
+   font-style: normal;
+   color: inherit;
+   text-rendering: optimizeLegibility;
+   font-size inherit
+   line-height: 1.1;
+   
+
+.font-light
+   font-weight 300
+
+// b
+//    font-weight bold
+ 
+// .font-semibold
+//    font-weight 600 !important
+
+a
+   color inherit
+   text-decoration: none;
+   line-height: inherit;
+   transition: all .1s linear
+   &:hover
+      text-decoration none
+      color inherit
+   & img
+      border: 0;
+   
+.link
+   color #00adff
+   border-bottom 1px solid rgba(#00adff, 1)
+   &:hover
+      color #00adff
+      border-bottom-color transparent
+
+.link-secondary
+   color rgba($white, .4)
+   border-bottom 1px solid rgba($white, .2)
+   &:hover
+      color rgba($white, .6)
+      border-bottom-color transparent
+
+// :visited
+//    opacity: 1
+   
+// ins,
+// abbr[title]
+//    text-decoration none
+   
+// .dotted-link
+//    white-space nowrap
+//    position relative
+//    border-bottom-color transparent
+//    &::before
+//       content '.......................................................'
+//       speak none
+//       position absolute
+//       bottom -.3em   
+//       left 0
+//       right 0
+//       letter-spacing 0
+//       white-space nowrap
+//       overflow hidden
+//       transition inherit
+//       opacity .3
+//       transition .2s
+//       font-weight 400
+//    &:hover,
+//    &.active
+//       &::before
+//          opacity 0
+
+// .formatted-text
+//    text-align left
+//    color $black
+//    //font-size 14px
+//    letter-spacing 0.025em
+//    +below('xs')
+//       font-size 2rem
+//    figure
+//       text-align center
+//    h1,
+//    h2,
+//    h3,
+//    h4,
+//    h5,
+//    h6
+//       color $black
+//       line-height: 1.3;
+//       margin-bottom 1em
+//       font-weight bold
+//    h2
+//       font-size 3.5rem
+//       +above('s')
+//          font-size 3rem
+//       letter-spacing .05em
+//       margin-bottom 1em
+//    h3
+//       font-size 2.2rem
+//       +above('s')
+//          font-size 1.8rem
+//       letter-spacing .05em
+//       margin-bottom 1em
+//    h4,
+//    h5,
+//    h6
+//       font-size 1.4rem
+//    p,
+//    ul,
+//    ol,
+//    img
+//       margin-top .7em
+//       &:last-child
+//          margin-bottom 0
+//       & + h2,
+//       & + h3,
+//       & + h4,
+//       & + h5,
+//       & + h6,
+//       & + ul,
+//       & + ol
+//          margin-top 1.5em
+//    a
+//       border-bottom 1px solid rgba($blue, .2)
+//       color $blue
+//       &:hover
+//          border-bottom-color transparent
+         
+//    small
+//       font-size 1.2rem
+   
+//    hr
+//       margin 3rem 0
+//       //max-width 50%
+//       border none
+//       border-bottom 1px solid rgba($black)
+//    ul
+//       //@extend .ul
+//       margin-left 0
+//       font-size inherit
+//       li
+//          margin-left 0 !important
+//          line-height: 1.6;
+//          margin-bottom .3em
+//          padding-left 2.5em
+//          position relative
+//          &::before
+//             content ''
+//             position absolute
+//             top .6em
+//             left .7em
+//             height .5em
+//             width .5em
+//             background-color $red
+//             border-radius 50%
+//    p
+//       img
+//          &,
+//          &:last-child
+//             margin 1.5em auto
+            
+
+

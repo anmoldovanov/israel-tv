@@ -1,0 +1,160 @@
+.slider
+   &__content
+      position relative
+   &__arrow
+      padding 3rem
+      +above('s')
+         padding 5rem
+      svg
+         height 3rem
+         width 3rem
+         +above('s')
+            height 5rem
+            width 5rem
+      &:hover
+         svg
+            fill $primary
+   &__list
+      margin-bottom 2rem
+      //-webkit-mask-image: linear-gradient(90deg, rgba(#000, 0) 0%,  rgba(#000, 1) 2%, rgba(#000, 1) 98%,  rgba(#000, 0) 100% )
+      //position relative
+      //padding 0 5rem
+   // &__arrows
+   //    display flex
+   //    justify-content space-between
+   //    position absolute
+   //    backface-visibility: hidden;
+   //    top 50%
+   //    transform translateY(-50%)
+   //    left 1.5rem
+   //    right 1.5rem
+   //    pointer-events none
+   // +below('xs')
+   //    &__arrow--prev
+   //       margin-right .5rem
+   // +above('s')
+   //    &__arrow--prev
+   //       margin-left -1rem
+   //       &:hover
+   //           transform translateX(-.5rem)
+   //    &__arrow--next
+   //       margin-right -1rem
+   //       &:hover
+   //           transform translateX(.5rem)
+        
+      
+   .slick-initialized + &__arrows
+      opacity 1
+   &__list,
+   &__item
+      cursor grab
+      &:focus
+         cursor grabbing
+   &--slides-to-show-1 &__list:not(.slick-initialized) &__item:not(:first-child)
+      display none
+   // &__arrow
+   //    pointer-events all
+   //    display flex
+   //    align-items center
+   //    justify-content center
+   //    font-size 1rem
+   //    transition .3s
+   //    //opacity .5
+   //    //padding 1rem
+   //    height 6rem
+   //    width 6rem
+   //    +above('s')
+   //       height 7rem
+   //       width 7rem
+   //    //opacity .5
+   //    background-color $primary
+   //    svg
+   //       fill $white
+   //       height 2.5rem
+   //       width 2.5rem
+   //       +above('s')
+   //          height 3rem
+   //          width 3rem
+   //    &:hover
+   //       opacity 1
+   //       background-color $primary-lighten
+   //    &--prev svg
+   //       margin-left -.2rem
+   //    &--next svg
+   //       margin-right -.4rem
+   //    // svg
+   //    //    height 5rem
+   //    //    width 5rem
+   //    //    color #000
+   //    //    +above('m')
+   //    //       width 8rem
+   //    //       height 8rem 
+   //    &.slick-disabled
+   //       opacity .2
+   //       pointer-events none
+   //    &:hover
+   //       color $primary
+   
+   // &--hide-arrows &__arrow
+   //    opacity 0
+   //    &--prev
+   //       transform translateX(-1rem)
+   //    &--next
+   //       transform translateX(1rem)
+   // &--hide-arrows:hover &__arrow
+   //    opacity 1
+   //    transform none
+      
+
+   .slick-track,
+   .slick-list
+      width 100%
+
+
+.slick-dots
+   display flex
+   justify-content center
+   margin 3rem 0
+   li
+      padding .5rem
+   button
+      @extend .btn-base
+      font-size 0
+      height 20px
+      width 20px
+      background-color #cccccc
+      border-radius 50%
+      padding 6px
+      background-clip content-box
+   li.slick-active button
+      background-color $black
+      //border 1px solid #959595
+      height 20px
+      width 20px
+      background-clip content-box
+// .slick-dots
+//    // margin 2rem 0 0
+//    // +above('s')
+//    //    margin 5rem 0 0
+//    display flex
+//    position relative
+//    li
+//       padding 0 1rem
+//       transition .3s
+//    button
+//       @extend .btn-base
+//       height 1.8rem
+//       width 1.8rem
+//       background-color #65bfb3
+//       //border .2rem solid $white
+//       border-radius 50%
+//       font-size 0
+//    li.slick-active 
+//       //padding 0 3rem
+//       button
+//          background-color $black
+      
+//    justify-content center
+   
+      
+   

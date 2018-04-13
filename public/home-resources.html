@@ -1,0 +1,10 @@
+<script src="js/main.js"></script>
+<script>
+  
+  $('.video-tutorial').on('click', function(e) {
+       var iframe = this.querySelector('iframe')
+       this.classList.add('active')
+       iframe.src = iframe.dataset.src
+    })
+</script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic-ext" rel="stylesheet">

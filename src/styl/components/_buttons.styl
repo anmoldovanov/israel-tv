@@ -1,0 +1,366 @@
+.btn-base
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   position relative
+   display inline-block
+   text-align center
+   vertical-align middle
+   text-decoration none
+   -webkit-tap-highlight-color transparent
+   border: none
+   padding 0
+   line-height 1
+   cursor pointer
+   background transparent
+   transition all .2s ease-out
+   //outline-color: $primary
+   white-space nowrap
+   color inherit
+   font-weight normal
+   text-transform inherit
+   letter-spacing inherit
+   border-radius 0
+   &::-moz-focus-inner
+      border 0
+      padding 0
+
+
+.btn
+   @extend .btn-base
+   font-weight 600
+   padding .8em 1.3em 1em
+   color $white
+   border-radius .7rem
+   font-size 1.4rem
+   background-color $blue
+   box-shadow: 0px 1px 2px #333;
+   &:hover
+      color $white
+      background-color lighten($blue, 10%)
+   &--orange
+      background-color $orange
+      &:hover
+         //background-color #52a1ff
+         background-color lighten($orange, 10%)
+      
+
+
+.android-btn,
+.apple-btn
+   display inline-block
+   
+.apple-btn
+   background-image resolve('app-store.png')
+   width (25.6rem / 1.2)
+   min-width (25.6rem / 1.2)
+   height (7.8rem / 1.2)
+   min-height (7.8rem / 1.2)
+   background-size contain
+.android-btn
+   background-image resolve('google-play.png')
+   width (25.6rem / 1.2)
+   min-width (25.6rem / 1.2)
+   height (7.8rem / 1.2)
+   min-height (7.8rem / 1.2)
+   background-size contain
+   
+
+.secondary-btn
+   @extend .btn-base
+   font-size 1.8rem
+   +above('xl')
+      font-size 2rem
+   &::before
+      content ''
+      position absolute
+      width 100%
+      height 100%
+      bottom 0
+      right 0
+      transform translate(.2em,.25em)
+      border-radius: 2.5rem;
+      background-color #141e24
+      background-image: linear-gradient( -150deg,rgba(0,157,225,.5) 0%,  rgba(0,32,52,1) 60%, rgba(0,157,225,.5) 100%);
+      transition .2s
+   &__inner
+      position relative
+      z-index 2
+      padding .85em 1.2em 1em
+      +above('xl')
+         padding .85em 1.2em 1em
+      font-weight bold
+      border: 1px solid rgba(197, 234, 251, .32);
+      border-radius: 2.2rem;
+      //background-color: rgb(255, 255, 255);
+      
+      //box-shadow: .5873rem .8057rem 0px 0px rgba(2, 170, 238, 0.25);
+      color $white
+      max-width 100%
+      background-color #141e24
+      background-image: linear-gradient( -150deg, rgba(#141e23,1)0%, rgba(0,157,225,.35) 50%, rgba(#141e23,1) 100%);
+      border: 1px solid rgb(3, 23, 32);
+      transition .2s
+   &:hover &__inner
+      border-color: rgb(126, 160, 176);
+   &:active::before
+      //opacity 0
+   &:active &__inner
+      border-color: transparent;
+      transform translate(.2em,.25em)
+      
+
+.red-btn
+   @extend .btn-base
+   font-size 1.8rem
+   +above('xl')
+      font-size 2rem
+   &::before
+      content ''
+      position absolute
+      width 100%
+      height 100%
+      bottom 0
+      right 0
+      transform translate(.2em,.25em)
+      border-radius: 2.5rem;
+      background-color #ca205b
+      background-image: linear-gradient( -150deg,rgba(#a4194a,.5) 0%,  rgba(#ca205b,1) 60%, rgba(#a4194a,.5) 100%);
+      transition .2s
+   &__inner
+      position relative
+      z-index 2
+      padding .85em 1.4em 1em
+      +above('xl')
+         padding .85em 1.6em 1em
+      font-weight bold
+      //border: 1px solid rgba(197, 234, 251, 1);
+      border-radius: 2.2rem;
+      //background-color: rgb(255, 255, 255);
+      
+      //box-shadow: .5873rem .8057rem 0px 0px rgba(2, 170, 238, 0.25);
+      color $white
+      max-width 100%
+      background-color #141e24
+      background-image: linear-gradient( -150deg, rgba(#a21849,1)0%, rgba(#c9205a,1) 50%, rgba(#a21849,1) 100%);
+      border: 1px solid #ca205b;
+      transition .2s
+   &:hover &__inner
+      border-color: #e895b3;
+   &:active::before
+      //opacity 0
+   &:active &__inner
+      border-color: #ca205b;
+      transform translate(.2em,.25em)
+
+
+
+
+.blue-btn
+   @extend .btn-base
+   font-size 1.8rem
+   +above('xl')
+      font-size 2rem
+   &::before
+      content ''
+      position absolute
+      width 100%
+      height 100%
+      bottom 0
+      right 0
+      transform translate(.2em,.25em)
+      border-radius: 2.5rem;
+      background-color #141e24
+      background-image: linear-gradient( -150deg,rgba(#214a92,1) 0%,  rgba(#1c72a8,1) 60%, rgba(#214a92,1) 100%);
+      transition .2s
+   &__inner
+      position relative
+      z-index 2
+      padding .85em 1.4em 1em
+      +above('xl')
+         padding .85em 1.6em 1em
+      font-weight bold
+      //border: 1px solid rgba(197, 234, 251, 1);
+      border-radius: 2.2rem;
+      //background-color: rgb(255, 255, 255);
+      
+      //box-shadow: .5873rem .8057rem 0px 0px rgba(2, 170, 238, 0.25);
+      color $white
+      max-width 100%
+      background-color #141e24
+      background-image: linear-gradient( -150deg, rgba(#2156ab,1)0%, rgba(#1b8fd2,1) 50%, rgba(#2156ab,1) 100%);
+      border: 1px solid #146cae;
+      transition .2s
+   &:hover &__inner
+      border-color: #7dafdd;
+   &:active::before
+      //opacity 0
+   &:active &__inner
+      border-color: #146cae;
+      transform translate(.2em,.25em)
+
+
+.light-blue-btn
+   @extend .btn-base
+   font-size 1.8rem
+   min-width 18rem
+   +above('xl')
+      font-size 2rem
+   &::before
+      content ''
+      position absolute
+      width 100%
+      height 100%
+      bottom 0
+      right 0
+      transform translate(.2em,.25em)
+      border-radius: 2.5rem;
+      background-color #00abdd
+      //background-image: linear-gradient( -150deg,rgba(#214a92,1) 0%,  rgba(#1c72a8,1) 60%, rgba(#214a92,1) 100%);
+      transition .2s
+   &__inner
+      position relative
+      z-index 2
+      padding .85em 1.4em 1em
+      +above('xl')
+         padding .85em 1.6em 1em
+      font-weight bold
+      //border: 1px solid rgba(197, 234, 251, 1);
+      border-radius: 2.2rem;
+      //background-color: rgb(255, 255, 255);
+      
+      //box-shadow: .5873rem .8057rem 0px 0px rgba(2, 170, 238, 0.25);
+      color $white
+      max-width 100%
+      background-color #00b9f2
+      //background-image: linear-gradient( -150deg, rgba(#2156ab,1)0%, rgba(#1b8fd2,1) 50%, rgba(#2156ab,1) 100%);
+      //border: 1px solid #00b9f2;
+      transition .2s
+   &:hover &__inner
+      //border-color: #7dafdd;
+      background-color #00c1f7
+   &:active::before
+      //opacity 0
+   &:active &__inner
+      background-color #00c1f7
+      transform translate(.2em,.25em)
+      
+
+
+
+
+.green-btn
+   @extend .btn-base
+   font-size 1.8rem
+   min-width 18rem
+   +above('xl')
+      font-size 2rem
+   &::before
+      content ''
+      position absolute
+      width 100%
+      height 100%
+      bottom 0
+      right 0
+      transform translate(.2em,.25em)
+      border-radius: 2.5rem;
+      background-color #7f9c20
+      transition .2s
+   &__inner
+      position relative
+      z-index 2
+      padding .85em 1.4em 1em
+      +above('xl')
+         padding .85em 1.6em 1em
+      font-weight bold
+      border-radius: 2.2rem;
+      color $white
+      max-width 100%
+      background-color #a4c247
+      transition .2s
+   &:hover &__inner
+      background-color #aecc4f
+   &:active &__inner
+      background-color #9fbc46
+      transform translate(.2em,.25em)
+
+
+.white-btn
+   @extend .btn-base
+   &::before
+      content ''
+      position absolute
+      width 100%
+      height 100%
+      bottom 0
+      right 0
+      transform translate(.6rem,.8rem)
+      border-radius: 2.5rem;
+      background-color rgba(2, 170, 238, 0.25);
+      transition .2s
+   &__inner
+      position relative
+      z-index 2
+      padding .85em 1.6em
+      font-weight bold
+      border: 1px solid rgba(197, 234, 251, .32);
+      border-radius: 2.5rem;
+      background-color: rgb(255, 255, 255);
+      font-size 2rem
+      //box-shadow: .5873rem .8057rem 0px 0px rgba(2, 170, 238, 0.25);
+      color #4d5f67
+      max-width 100%
+      background-color #fff
+      transition .2s
+   &:active &__inner
+      //border-color: transparent;
+      transform translate(.6rem,.8rem)
+
+.btn-info
+   @extend .btn-base
+   padding .2em
+   vertical-align middle
+   &__message
+      background-color #fff
+      position absolute
+      font-size 1.6rem
+      width 20rem
+      top -1rem
+      right -2.5rem
+      transform translateY(-100%)
+      transform translateY(calc(-100% - 1rem))
+      white-space normal
+      padding 2rem
+      box-shadow: 1.2709rem 1.2816rem 3.2rem 0px rgba(37, 119, 157, 0.25);
+      border-radius 2rem
+      opacity 0
+      visibility hidden
+      transition .2s
+      text-align left
+      pointer-events none
+      font-family $font-therd
+      &::before
+         content ''
+         position absolute
+         right 2.5rem
+         bottom calc(-1.2rem + 1px)
+         border-top 1.5rem solid $white
+         border-left 1.5rem solid transparent
+         border-right 1.5rem solid transparent
+   &:hover &__message,
+   &:active &__message
+      opacity 1
+      visibility visible
+      transform translateY(-100%)
+   svg
+      fill #19afef
+      height 2.2rem
+      width 2.2rem
+
+.home-sidebar-footer
+   margin-top 2rem
+   .apple-btn
+      padding-right 4em
+      +below('xs')
+         display none
+      &::before
+         background-color #eef4f4

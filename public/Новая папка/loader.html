@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+<title>Israel TV</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0,  user-scalable=0" name="viewport">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body class="loader-page">
+   
+      <div class="loader">
+          <div class="loader-header">
+             <div class="loader-logo">
+                <img src="img/loader-logo.jpg" alt="">
+             </div>
+             <div class="loader-desc">
+                <div class="loader-desc__title">Connecting</div>
+                <div class="loader-desc__desc">
+                    Please wait
+                    <br>
+                    <br>
+                    For more information <br>
+                    please contact: <span><img src="img/email.svg" alt=""></span>
+                </div>
+             </div>
+          </div>
+          <div class="loader-progress">
+              <div class="loader-progress__current" id="loader-progress" style="width: 0%; transition: 4s">
+                  <!-- <div class="loader-progress__tooltip"><span>50%</span></div> -->
+              </div>
+          </div>
+      </div>
+
+      <script>
+         setTimeout(function() {
+            document.getElementById('loader-progress').style.width = '100%'
+         }, 1000)
+      </script>
+
+</body>
+</html>

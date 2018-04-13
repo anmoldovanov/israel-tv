@@ -1,0 +1,186 @@
+
+$container-padding = 2rem
+$g-border-radius = .7rem
+$g-box-shadow = 0 1.4rem 2.9rem 0 rgba(27, 10, 3, 0.26);
+//$primary-font-size = 2.2rem
+$primary-font-size = 1.5rem
+
+
+@import 'components/_base.styl'
+
+::selection 
+   background: black
+   color $white
+   
+body
+  letter-spacing 0
+  color $black
+  font-size $primary-font-size 
+  font-family: $font-primary
+  height 100% !important
+  //background-color #f3f3f3
+  background-color #eef4f4
+  //min-width 1024px
+  width 100%
+  //background-image: linear-gradient(-180deg, #171C47 0%, #14193E 20rem);
+  line-height normal
+  .is-touch-device & // баг IOS, без этого не регистрирует клик. 
+    cursor pointer
+  .isIE &,
+  .isEdge &
+    cursor auto
+  .overflow-hidden-active &
+    overflow hidden
+    padding-right var(--scrollbar-width)
+  
+
+     
+
+@media (-webkit-max-device-pixel-ratio: 1) and (max-width: 1280px) and (min-width: 1000px), (max-resolution: 1dppx) and (max-width: 1280px) and (min-width: 1000px), (max-resolution: 96dpi) and (max-width: 1280px) and (min-width: 1000px), (min-width: 1281px) {
+   
+   html.has-scrollbar ::-webkit-scrollbar-track {
+     background-color:#14193E
+   }
+   html.has-scrollbar ::-webkit-scrollbar {
+     width: 1rem;
+     background-color: #14193E
+   }
+   html.has-scrollbar ::-webkit-scrollbar-thumb {
+     background-color: #1a2050
+     border-radius: 99rem;
+   }
+   
+   html.has-scrollbar.modal-open body {
+      padding-right 1rem
+   }
+
+} 
+.container
+   max-width 131rem
+   +above('xxl')
+      max-width 131rem
+   margin-left auto
+   margin-right auto
+   padding-left 1.5rem
+   padding-right 1.5rem
+   +above('s')
+     padding-left 2rem
+     padding-right 2rem
+
+
+.wow 
+   visibility hidden
+   
+
+.font-primary-gradient
+   color $primary
+   @supports (-webkit-background-clip: text)
+      color transparent
+      background: linear-gradient(#02bbe0, #0a91c8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+//@import '../../bower_components/perfect-scrollbar/css/perfect-scrollbar.css'
+//@import '../../bower_components/onepage-scroll/onepage-scroll.css'
+//@import '../../bower_components/nouislider/distribute/nouislider.min.css'
+//@import '../../bower_components/jquery-bar-rating/dist/themes/css-stars.css'
+//@import '../../bower_components/animate.css/animate.min.css'
+//@import '../../bower_components/slick-carousel/slick/slick.css'
+
+//@import '../../bower_components/tether-select/dist/css/select-theme-default.css'
+//@import '../../bower_components/lightgallery/dist/css/lightgallery.min.css'
+//@import '../../bower_components/flatpickr/src/style/flatpickr.styl'
+//@import '../../bower_components/selectize/dist/css/selectize.css'
+//@import '../../bower_components/tooltipster/dist/css/tooltipster.bundle.min.css'
+//@import '../../bower_components/fullpage.js/dist/jquery.fullpage.css'
+
+//@import '../../bower_components/nouislider/distribute/nouislider.min.css'
+//@import '../../bower_components/perfect-scrollbar/css/perfect-scrollbar.css'
+
+//@import 'parts/magiczoomplus.css'
+
+@import 'components/_buttons.styl'
+@import 'components/_typography.styl'
+@import 'components/_inputs.styl'
+
+@import 'components/_modals.styl'
+ 
+@import 'parts/_header.styl'
+@import 'parts/_footer.styl'
+
+@import 'parts/_home.styl'
+@import 'parts/bee3d.css'
+
+@import 'parts/_loader.styl'
+
+
+.scroll-up
+  height 5rem
+  width 5rem
+  position fixed
+  bottom 2.5rem
+  right 2.5rem
+  background-image resolve('scroll-up.png')
+  background-size contain
+  opacity 0
+  +below('s')
+    display none
+  .show-scroll-up &
+    opacity 1
+
+.main-banner-android-ill
+  position absolute
+  background-size contain
+  top 2.5rem
+  left 2.5rem
+  height (23.2rem / 4)
+  width (19.4rem / 4)
+  +above('s')
+    top 8rem
+    right 8rem
+    height (23.2rem / 2.3)
+    width (19.4rem / 2.3)
+.main-banner-firetv-ill
+  margin-bottom -4rem
+  width 24rem
+  +above('s')
+    margin-bottom 0
+    width 25rem
+    // position absolute
+    // bottom 0
+    // right 2rem
+    // margin-bottom 0
+
+
+.main-slider-tv .main-slider-slide 
+  position relative
+  overflow visible
+  &::before
+    content ''
+    width 56rem
+    height 35.6rem
+    background-image resolve('tv-slide-bg.png')
+    position absolute
+    top -1rem
+    left -3.5rem
+    background-size contain
+    
+
+
+//////////////
+
+
+.tutorials-soon
+  border-radius: 1.5rem;
+  box-shadow: 0 0 43px 0 rgba(13,126,167,.1);
+  overflow hidden
+  margin-bottom 5rem
+  
+
+
+///////////////////////
+
+
+.tablist-panel
+  &:not(.tablist-panel-active)
+    display none
