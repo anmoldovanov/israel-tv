@@ -111,7 +111,7 @@
 	var advantagesSlider = document.getElementById('main-slider');
 	var slider = new Bee3D(advantagesSlider, {
 	    effect: 'coverflow',
-	    focus: 1,
+	    focus: advantagesSlider.dataset.focus || 1,
 	    loop: {
 	        enabled: true,
 	        continuous: true
