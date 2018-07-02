@@ -361,17 +361,21 @@
    
 .tutorial-tabs
    display flex
-   justify-content center
+   justify-content flex-start
    font-size 2rem
+   flex-wrap wrap
+   &__item
+      margin-bottom 1rem
    +above('s')
       font-size 2rem
    &__tab
       position relative
       margin-right 1rem
       padding-right 5rem
+      
       +below('xs')
          .tutorial-tabs__item:first-child &
-            margin-right -2rem
+            margin-right -1rem
       +above('s')
          padding-right 5.5rem
          margin-right 3rem
