@@ -6,6 +6,11 @@
    // &--smart-tv
    padding 3rem 3rem 17rem
    z-index 2
+   +below('xs')
+      &.has-switch-tabslits
+         padding-bottom 21rem
+         .android-btn
+            bottom 6rem
    +above('s')
       padding 3rem 3rem
       display flex 
@@ -24,6 +29,8 @@
   
 .main-banner-text
    text-align right
+   .has-switch-tabslits &
+      padding-bottom 2rem
    +above('s')
       position absolute
       top 3rem
@@ -979,3 +986,40 @@
          
    
 
+/////////////////////////////////////
+
+.switch-tabslits
+   cursor pointer
+   font-size 2rem  
+   z-index 2          
+   position absolute 
+   bottom 2rem
+   left 0
+   display flex
+   justify-content center
+   +above('s')
+      display block
+      left auto
+      bottom -2rem
+   right 0
+   white-space nowrap
+   &__content
+      padding-right 4rem
+      position relative
+      &::before
+         content ''
+         position absolute
+         top 0
+         right 0
+         height 3rem
+         width 3rem
+         border-radius 50%
+         background-color #fff
+         background-image resolve('unchecked-green.png')
+         background-size contain
+   input:checked ~ &__content
+      font-weight bold
+      &::before
+         background-image resolve('checked-green.png')
+      //background-image resolve('unchecked.png')
+      //background-size contain 
