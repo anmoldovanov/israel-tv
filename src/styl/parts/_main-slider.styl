@@ -6,11 +6,6 @@
    // &--smart-tv
    padding 3rem 3rem 17rem
    z-index 2
-   +below('xs')
-      &.has-switch-tabslits
-         padding-bottom 21rem
-         .android-btn
-            bottom 6rem
    +above('s')
       padding 3rem 3rem
       display flex 
@@ -29,8 +24,6 @@
   
 .main-banner-text
    text-align right
-   .has-switch-tabslits &
-      padding-bottom 2rem
    +above('s')
       position absolute
       top 3rem
@@ -941,7 +934,7 @@
       position absolute
       bottom 4rem
       left 0
-      right 0
+      right 2rem
    
 .main-slider-tabs
    display flex
@@ -988,38 +981,43 @@
 
 /////////////////////////////////////
 
+
 .switch-tabslits
-   cursor pointer
-   font-size 2rem  
-   z-index 2          
-   position absolute 
-   bottom 2rem
-   left 0
    display flex
-   justify-content center
+   margin-bottom -1.5rem
+   margin-right -.3rem
    +above('s')
-      display block
-      left auto
-      bottom -2rem
-   right 0
-   white-space nowrap
-   &__content
-      padding-right 4rem
-      position relative
-      &::before
-         content ''
-         position absolute
-         top 0
-         right 0
-         height 3rem
-         width 3rem
-         border-radius 50%
+      margin-right -.6rem
+   &__tab
+      line-height 5.2rem
+      border 2px solid $white
+      border-radius 2rem 2rem 0 0
+      font-size 1.3rem
+      padding 0 1rem 1.5rem
+      +above('s')
+         padding 0 2rem 1.5rem
+         font-size 2.2rem
+      color #726e6a
+      transition .2s color, .2s background, .2s border
+      &:hover
+         color $green
          background-color #fff
-         background-image resolve('unchecked-green.png')
-         background-size contain
-   input:checked ~ &__content
-      font-weight bold
-      &::before
-         background-image resolve('checked-green.png')
-      //background-image resolve('unchecked.png')
-      //background-size contain 
+      &.tablist-tab-active
+         font-weight bold
+         color $white
+         border-color $green
+         background-color $green
+         pointer-events none
+   &__item
+      padding 0 .3rem
+      +above('s')
+         padding 0 .6rem
+   &--blue &__tab
+      &:hover
+         color $blue
+      &.tablist-tab-active
+         background-color $blue
+         border-color $blue
+         color $white
+.tutorials-set:not(.tablist-panel-active)
+   display none
