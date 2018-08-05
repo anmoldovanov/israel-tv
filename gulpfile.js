@@ -121,7 +121,7 @@ gulp.task('styl', function () {
       relative: 'src/stylus'
     }),
     // require('postcss-cssnext')(),
-    require('cssnano')(),
+    //require('cssnano')(),
   ]))
   .on('error', onError)
   .pipe(gulp.dest(path.public.css))
