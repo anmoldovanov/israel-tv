@@ -451,6 +451,9 @@ textarea {
 .color-gray {
   color: #9e9e9e !important;
 }
+.color-orange {
+  color: #ff9000;
+}
 .wsnw {
   white-space: nowrap;
 }
@@ -2735,8 +2738,8 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   margin-bottom: 1rem;
 }
 .apple-tutorials .text-tutorials__item:nth-child(1) .text-tutorial__photo {
-  margin-right: -2rem;
-  width: 33.57142857142858rem;
+  margin-right: -7rem;
+  width: 38rem;
 }
 .apple-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__photo {
   margin-left: -4rem;
@@ -2751,29 +2754,42 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   width: 46.5rem;
 }
 .apple-tutorials .text-tutorials__item:nth-child(5) .text-tutorial__photo {
-  margin-right: -2rem;
-  width: 33.57142857142858rem;
+  margin-right: -7rem;
+  width: 38rem;
 }
 .apple-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__photo {
   width: 34.375rem;
-  margin-left: -4rem;
+  margin-left: -5rem;
 }
 .apple-tutorials .text-tutorials__item:nth-child(7) .text-tutorial__photo {
-  width: 35.6060606060606rem;
-  margin-right: -4rem;
+  width: 33rem;
+  margin-right: -1.5rem;
 }
 .apple-tutorials .text-tutorials__item:nth-child(8) .text-tutorial__photo {
-  width: 43.13725490196078rem;
-  margin-left: -13.5rem;
+  width: 33rem;
+  margin-left: -4rem;
 }
 .apple-tutorials .text-tutorials__item:nth-child(9) .text-tutorial__photo {
   margin-right: -2rem;
   width: 33.57142857142858rem;
 }
 .apple-tutorials .text-tutorials__item:nth-child(10) .text-tutorial__photo {
-  width: 33.33333333333333rem;
+  width: 36rem;
   top: 3.5rem;
-  margin-left: -4rem;
+  margin-left: -7rem;
+}
+.apple-tutorials .text-tutorials__item:nth-child(11) .text-tutorial__photo {
+  margin-right: -2rem;
+  width: 33.57142857142858rem;
+}
+.apple-tutorials .text-tutorials__item:nth-child(12) .text-tutorial__photo {
+  width: 43rem;
+  top: 3.5rem;
+  margin-left: -14rem;
+}
+.apple-tutorials .text-tutorials__item:nth-child(13) .text-tutorial__photo {
+  margin-right: -10rem;
+  width: 41rem;
 }
 .amazon-text-tutorials .text-tutorial__desc {
   font-weight: 600;
@@ -2933,58 +2949,24 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   width: 38rem;
   margin-left: -12rem;
 }
-.ipad-text-tutorials .text-tutorial__photo {
-  margin-bottom: 0rem;
-  top: 2rem;
+.ipad-text-tutorials .text-tutorial {
+  height: 38rem;
+  overflow: hidden;
 }
-.ipad-text-tutorials .text-tutorials__item:nth-child(1) .text-tutorial__photo {
-  margin-right: -2rem;
-  width: 35.69230769230769rem;
+.ipad-text-tutorials .text-tutorial__photo-bg {
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  width: calc(100% + 6rem);
+  margin: -3rem -3rem 2rem;
 }
-.ipad-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__photo {
-  margin-left: 3.5rem;
-  width: 26.076923076923077rem;
+.ipad-text-tutorials .text-tutorial__text {
+  position: relative;
+  z-index: 2;
 }
-.ipad-text-tutorials .text-tutorials__item:nth-child(3) .text-tutorial__photo {
-  margin-right: -2rem;
-  width: 36.69230769230769rem;
-}
-.ipad-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__photo {
-  margin-left: 3rem;
-  width: 26.538461538461537rem;
-}
-.ipad-text-tutorials .text-tutorials__item:nth-child(5) .text-tutorial__photo {
-  margin-right: -2rem;
-  width: 35.69230769230769rem;
-}
-.ipad-text-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__photo {
-  margin-left: 2.5rem;
-  width: 27.15384615384615rem;
-}
-.ipad-text-tutorials .text-tutorials__item:nth-child(7) .text-tutorial__photo {
-  margin-right: -2rem;
-  width: 33.57142857142858rem;
-}
-.ipad-text-tutorials .text-tutorials__item:nth-child(8) .text-tutorial__photo {
-  margin-left: -2rem;
-  width: 31.769230769230766rem;
-}
-.ipad-text-tutorials .text-tutorials__item:nth-child(9) .text-tutorial__photo {
-  margin-right: -2rem;
-  width: 32.07692307692308rem;
-}
-.ipad-text-tutorials .text-tutorials__item:nth-child(10) .text-tutorial {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.ipad-text-tutorials .text-tutorials__item:nth-child(10) .text-tutorial__desc {
-  font-size: 4rem;
-}
-.ipad-text-tutorials .text-tutorials__item:nth-child(10) .text-tutorial__photo {
-  margin-left: 7rem;
-  width: 21.071428571428573rem;
-  margin-bottom: 2rem;
+.ipad-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__text {
+  min-width: 13rem;
 }
 .roku-tv-text-tutorials .text-tutorial__desc {
   font-weight: 600;
@@ -4799,19 +4781,19 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(3) .text-tutorial__photo {
-    width: 47.142857142857146rem;
+    width: 43.125rem;
     left: 2rem;
     margin: 0;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__photo {
     margin-left: -3rem;
-    width: 61.53846153846153rem;
-    left: 26rem;
+    width: 62.30769230769231rem;
+    left: 23rem;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(5) .text-tutorial__photo {
-    width: 47.142857142857146rem;
+    width: 51.42857142857143rem;
     left: 2rem;
     margin: 0;
   }
@@ -4822,27 +4804,27 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
 
   .apple-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__photo {
     margin-left: -3rem;
-    width: 46.15384615384615rem;
-    left: 38rem;
+    width: 52.30769230769231rem;
+    left: 31rem;
     margin: 0;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(7) .text-tutorial__photo {
     margin-right: -2rem;
-    width: 50.76923076923077rem;
+    width: 43.84615384615385rem;
     left: 2rem;
     margin: 0;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(8) .text-tutorial__photo {
     margin-left: -3rem;
-    width: 58.57142857142858rem;
-    left: 24rem;
+    width: 40rem;
+    left: 40rem;
     margin: 0;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(9) .text-tutorial__photo {
-    width: 47.142857142857146rem;
+    width: 41rem;
     left: 2rem;
     margin: 0;
   }
@@ -4851,6 +4833,25 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
     margin-left: -3rem;
     width: 46.15384615384615rem;
     left: 38rem;
+    margin: 0;
+  }
+
+  .apple-tutorials .text-tutorials__item:nth-child(11) .text-tutorial__photo {
+    width: 45rem;
+    left: 2rem;
+    margin: 0;
+  }
+
+  .apple-tutorials .text-tutorials__item:nth-child(12) .text-tutorial__photo {
+    margin-left: -3rem;
+    width: 60rem;
+    left: 24rem;
+    margin: 0;
+  }
+
+  .apple-tutorials .text-tutorials__item:nth-child(13) .text-tutorial__photo {
+    width: 60rem;
+    left: 2rem;
     margin: 0;
   }
 
@@ -5055,100 +5056,15 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
     width: auto;
   }
 
-  .ipad-text-tutorials .text-tutorial {
-    height: 36rem;
-    height: 44rem;
-  }
-
-  .ipad-text-tutorials .text-tutorial__photo {
-    margin-bottom: 0;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(1) .text-tutorial__photo {
+  .ipad-text-tutorials .text-tutorial__photo-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: auto;
     margin: 0;
-    width: 40.833333333333336rem;
-    left: 10rem;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial {
-    height: 44rem;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__photo {
-    margin: 0;
-    width: 30rem;
-    left: 47rem;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(3) .text-tutorial__photo {
-    margin: 0;
-    width: 43.63636363636363rem;
-    left: 7rem;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial {
-    height: 44rem;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__text {
-    min-width: 25rem;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__photo {
-    margin: 0;
-    width: 30.000000000000004rem;
-    left: 47rem;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(5) .text-tutorial__photo {
-    width: 38.666666666666664rem;
-    left: 1rem;
-    margin: 0;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(6) .text-tutorial {
-    height: 44rem;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__text {
-    min-width: 25rem;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__photo {
-    margin: 0;
-    width: 29.416666666666664rem;
-    left: 47rem;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(7) .text-tutorial__photo {
-    width: 50.76923076923077rem;
-    left: 2rem;
-    margin: 0;
-    width: 39.090909090909086rem;
-    left: 11rem;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(8) .text-tutorial {
-    height: 48rem;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(8) .text-tutorial__photo {
-    margin: 0;
-    width: 39.090909090909086rem;
-    left: 39rem;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(9) .text-tutorial__photo {
-    margin: 0;
-    width: 34.75000000000001rem;
-    left: 14rem;
-  }
-
-  .ipad-text-tutorials .text-tutorials__item:nth-child(10) .text-tutorial__photo {
-    margin-bottom: 0;
-    margin: 0;
-    width: 29.999999999999996rem;
-    left: 44rem;
   }
 
   .roku-tv-text-tutorials .text-tutorial {
@@ -6085,22 +6001,27 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__photo {
-    left: 13rem;
+    left: 15rem;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__photo {
-    width: 47.142857142857146rem;
-    left: 29rem;
+    width: 48.57142857142858rem;
+    left: 27rem;
     top: 6rem;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(8) .text-tutorial__photo {
-    left: 16rem;
+    left: 33rem;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(10) .text-tutorial__photo {
-    width: 45.51724137931035rem;
-    left: 29rem;
+    width: 49.6551724137931rem;
+    left: 25rem;
+  }
+
+  .apple-tutorials .text-tutorials__item:nth-child(12) .text-tutorial__photo {
+    width: 57rem;
+    left: 18rem;
   }
 
   .amazon-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__photo {
@@ -6331,8 +6252,8 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
     left: 9rem;
   }
 
-  .ipad-text-tutorials .text-tutorials__item:nth-child(5) .text-tutorial__photo {
-    left: 12rem;
+  .ipad-text-tutorials .text-tutorial {
+    height: 46rem;
   }
 
   .main-banner-text__title {
@@ -6613,17 +6534,17 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(1) .text-tutorial__photo {
-    width: 57.85714285714286rem;
-    left: 2rem;
+    width: 70rem;
+    left: 3rem;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(2) .text-tutorial {
-    height: 41rem;
+    height: 45rem;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__photo {
-    width: 55rem;
-    left: 34rem;
+    width: 60rem;
+    left: 35rem;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(3) .text-tutorial__photo {
@@ -6632,7 +6553,7 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(4) .text-tutorial {
-    height: 41rem;
+    height: 46rem;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__text {
@@ -6640,12 +6561,12 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__photo {
-    width: 72.72727272727272rem;
-    left: 20rem;
+    width: 83rem;
+    left: 16rem;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(5) .text-tutorial__photo {
-    width: 57.85714285714286rem;
+    width: 68rem;
     left: 4rem;
   }
 
@@ -6659,18 +6580,18 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
 
   .apple-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__photo {
     top: 3rem;
-    width: 55rem;
-    left: 36rem;
+    width: 57rem;
+    left: 38rem;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(7) .text-tutorial__photo {
-    width: 62.30769230769231rem;
+    width: 54rem;
     left: 4rem;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(8) .text-tutorial__photo {
-    width: 74.54545454545453rem;
-    left: 14.5rem;
+    width: 52rem;
+    left: 42rem;
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(9) .text-tutorial__photo {
@@ -6679,8 +6600,23 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .apple-tutorials .text-tutorials__item:nth-child(10) .text-tutorial__photo {
-    width: 59.230769230769226rem;
+    width: 65rem;
     left: 30rem;
+  }
+
+  .apple-tutorials .text-tutorials__item:nth-child(11) .text-tutorial__photo {
+    width: 57.85714285714286rem;
+    left: 4rem;
+  }
+
+  .apple-tutorials .text-tutorials__item:nth-child(12) .text-tutorial__photo {
+    width: 78rem;
+    left: 18rem;
+  }
+
+  .apple-tutorials .text-tutorials__item:nth-child(13) .text-tutorial__photo {
+    width: 75rem;
+    left: 4rem;
   }
 
   .amazon-text-tutorials .text-tutorial {
@@ -7316,8 +7252,8 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .text-tutorial__text {
+    width: 100%;
     min-width: 0;
-    max-width: 80%;
     margin-right: 0;
     margin-left: auto;
   }
@@ -7355,11 +7291,31 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .ipad-text-tutorials .text-tutorial {
-    min-height: 35.5rem;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    height: auto;
+    min-height: 0;
   }
 
-  .ipad-text-tutorials .text-tutorial__text {
-    max-width: none;
+  .ipad-text-tutorials .text-tutorials__item:nth-child(5) .text-tutorial__photo-bg {
+    background-position: center left 0rem;
+    height: 24rem;
+  }
+
+  .ipad-text-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__photo-bg {
+    background-position: center right 0rem;
+    height: 24rem;
+  }
+
+  .ipad-text-tutorials .text-tutorials__item:nth-child(7) .text-tutorial__photo-bg {
+    background-position: center left 0rem;
+    height: 24rem;
+  }
+
+  .ipad-text-tutorials .text-tutorials__item:nth-child(8) .text-tutorial__photo-bg {
+    background-position: center right 0rem;
+    height: 24rem;
   }
 
   .roku-tv-text-tutorials .text-tutorial {
