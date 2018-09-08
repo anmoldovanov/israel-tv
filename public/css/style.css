@@ -2672,58 +2672,6 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   width: 31.42857142857143rem;
   top: 3rem;
 }
-.iphone-text-tutorials .text-tutorial__photo {
-  margin-bottom: 0rem;
-}
-.iphone-text-tutorials .text-tutorials__item:nth-child(1) .text-tutorial__photo {
-  margin-right: -2rem;
-  width: 35.69230769230769rem;
-}
-.iphone-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__photo {
-  margin-left: 3.5rem;
-  width: 26.076923076923077rem;
-}
-.iphone-text-tutorials .text-tutorials__item:nth-child(3) .text-tutorial__photo {
-  margin-right: -2rem;
-  width: 36.69230769230769rem;
-}
-.iphone-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__photo {
-  margin-left: 3rem;
-  width: 26.538461538461537rem;
-}
-.iphone-text-tutorials .text-tutorials__item:nth-child(5) .text-tutorial__photo {
-  margin-right: -2rem;
-  width: 35.69230769230769rem;
-}
-.iphone-text-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__photo {
-  margin-left: 2.5rem;
-  width: 27.15384615384615rem;
-}
-.iphone-text-tutorials .text-tutorials__item:nth-child(7) .text-tutorial__photo {
-  margin-right: -2rem;
-  width: 33.57142857142858rem;
-}
-.iphone-text-tutorials .text-tutorials__item:nth-child(8) .text-tutorial__photo {
-  margin-left: -2rem;
-  width: 31.769230769230766rem;
-}
-.iphone-text-tutorials .text-tutorials__item:nth-child(9) .text-tutorial__photo {
-  margin-right: -2rem;
-  width: 32.07692307692308rem;
-}
-.iphone-text-tutorials .text-tutorials__item:nth-child(10) .text-tutorial {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.iphone-text-tutorials .text-tutorials__item:nth-child(10) .text-tutorial__desc {
-  font-size: 4rem;
-}
-.iphone-text-tutorials .text-tutorials__item:nth-child(10) .text-tutorial__photo {
-  margin-left: 7rem;
-  width: 21.071428571428573rem;
-  margin-bottom: 2rem;
-}
 .apple-tutorials .text-tutorial__desc {
   font-weight: 600;
   color: #4d5f67;
@@ -2966,6 +2914,28 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   z-index: 2;
 }
 .ipad-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__text {
+  min-width: 13rem;
+}
+.iphone-text-tutorials .text-tutorial {
+  height: 38rem;
+  overflow: hidden;
+}
+.iphone-text-tutorials .text-tutorial__photo-bg {
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  width: calc(100% + 6rem);
+  margin: -3rem -3rem 2rem;
+}
+.iphone-text-tutorials .text-tutorial__text {
+  position: relative;
+  z-index: 2;
+}
+.iphone-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__text {
+  min-width: 13rem;
+}
+.iphone-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__text {
   min-width: 13rem;
 }
 .roku-tv-text-tutorials .text-tutorial__desc {
@@ -4041,7 +4011,7 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   line-height: 1.2;
 }
 .mob-version-link__desc-wrapper {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 3rem;
 }
 .mob-version-link__desc {
@@ -4663,102 +4633,6 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
     margin: 0;
   }
 
-  .iphone-text-tutorials .text-tutorial {
-    height: 36rem;
-    height: 44rem;
-  }
-
-  .iphone-text-tutorials .text-tutorial__photo {
-    margin-bottom: 0;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(1) .text-tutorial__photo {
-    margin: 0;
-    width: 35.69230769230769rem;
-    left: 12rem;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial {
-    height: 44rem;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__photo {
-    margin: 0;
-    width: 26.076923076923077rem;
-    left: 39rem;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(3) .text-tutorial__photo {
-    margin: 0;
-    width: 36.69230769230769rem;
-    left: 9rem;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial {
-    height: 44rem;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__text {
-    min-width: 25rem;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__photo {
-    margin: 0;
-    width: 26.538461538461537rem;
-    left: 37rem;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(5) .text-tutorial__photo {
-    width: 35.69230769230769rem;
-    left: 1rem;
-    margin: 0;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(6) .text-tutorial {
-    height: 44rem;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__text {
-    min-width: 25rem;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__photo {
-    margin: 0;
-    width: 27.15384615384615rem;
-    left: 36rem;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(7) .text-tutorial__photo {
-    width: 50.76923076923077rem;
-    left: 2rem;
-    margin: 0;
-    width: 33.07692307692307rem;
-    left: 11rem;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(8) .text-tutorial {
-    height: 48rem;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(8) .text-tutorial__photo {
-    margin: 0;
-    width: 34.416666666666664rem;
-    left: 31rem;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(9) .text-tutorial__photo {
-    margin: 0;
-    width: 32.07692307692308rem;
-    left: 14rem;
-  }
-
-  .iphone-text-tutorials .text-tutorials__item:nth-child(10) .text-tutorial__photo {
-    margin-bottom: 0;
-    margin: 0;
-    width: 19.032258064516128rem;
-    left: 42rem;
-  }
-
   .apple-tutorials .text-tutorial {
     height: 36rem;
   }
@@ -5057,6 +4931,17 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .ipad-text-tutorials .text-tutorial__photo-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: auto;
+    margin: 0;
+  }
+
+  .iphone-text-tutorials .text-tutorial__photo-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -5760,7 +5645,7 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .mob-version-link {
-    height: 50rem;
+    height: 52rem;
     padding-top: 0;
     background-size: cover;
     background-position: left top;
@@ -5794,7 +5679,7 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .mob-version-link__title {
-    font-size: 3.2rem;
+    font-size: 3.8rem;
     margin-bottom: 0;
   }
 
@@ -6248,11 +6133,11 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
     width: 23.5rem;
   }
 
-  .iphone-text-tutorials .text-tutorials__item:nth-child(5) .text-tutorial__photo {
-    left: 9rem;
+  .ipad-text-tutorials .text-tutorial {
+    height: 46rem;
   }
 
-  .ipad-text-tutorials .text-tutorial {
+  .iphone-text-tutorials .text-tutorial {
     height: 46rem;
   }
 
@@ -7270,14 +7155,6 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
     min-height: 35.5rem;
   }
 
-  .iphone-text-tutorials .text-tutorial {
-    min-height: 35.5rem;
-  }
-
-  .iphone-text-tutorials .text-tutorial__text {
-    max-width: none;
-  }
-
   .apple-tutorials .text-tutorial {
     min-height: 35.5rem;
   }
@@ -7314,6 +7191,42 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .ipad-text-tutorials .text-tutorials__item:nth-child(8) .text-tutorial__photo-bg {
+    background-position: center right 0rem;
+    height: 24rem;
+  }
+
+  .iphone-text-tutorials .text-tutorial {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    height: auto;
+    min-height: 0;
+  }
+
+  .iphone-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__photo-bg {
+    background-position: center right 0rem;
+  }
+
+  .iphone-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__photo-bg {
+    background-position: center right 0rem;
+  }
+
+  .iphone-text-tutorials .text-tutorials__item:nth-child(5) .text-tutorial__photo-bg {
+    background-position: center left 0rem;
+    height: 24rem;
+  }
+
+  .iphone-text-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__photo-bg {
+    background-position: center right 0rem;
+    height: 24rem;
+  }
+
+  .iphone-text-tutorials .text-tutorials__item:nth-child(7) .text-tutorial__photo-bg {
+    background-position: center left 0rem;
+    height: 24rem;
+  }
+
+  .iphone-text-tutorials .text-tutorials__item:nth-child(8) .text-tutorial__photo-bg {
     background-position: center right 0rem;
     height: 24rem;
   }
