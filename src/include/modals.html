@@ -192,6 +192,58 @@
     </div>
 </div>
 
+
+<div class="modal modal-packages micromodal-slide" id="modal-packages" aria-hidden="true">
+    <div class="modal__overlay modal-packages__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__inner modal-packages__inner" dir="ltr">
+             <button class="modal__close  modal-request__close" aria-label="Закрыть окно" title="Закрыть окно" data-micromodal-close>
+                <i><svg focusable="false" aria-hidden="true"><use xlink:href="/svg/svg.svg#icon-close"></svg></i>
+            </button>
+            <div class="modal__container modal-packages__container" role="dialog" aria-modal="true">
+                  <div class="modal-packages__title">Packages variants</div>
+                  <div class="modal-packages__body">
+                      <div class="modal-packages__ill"><img src="/img/packages-ill.jpg" alt=""></div>
+                      <div class="modal-packages-info">
+                         <div class="modal-packages-info__title">Are you sure you want<br> to purchase basic package?</div>
+                         <div class="modal-packages-info__subtitle">just to let u know:</div>
+                         <div class="modal-packages-info__desc">basic package not including</div>
+                         <ul class="modal-packages-info__list">
+                             <li class="modal-packages-info__item">
+                              <svg focusable="false" aria-hidden="true"><use xlink:href="svg/svg.svg#icon-sad"></use></svg>
+                              <span>Vod</span>
+                             </li>
+                             <li class="modal-packages-info__item">
+                              <svg focusable="false" aria-hidden="true"><use xlink:href="svg/svg.svg#icon-sad"></use></svg>
+                              <span>Premium channels</span>
+                             </li>
+                             <li class="modal-packages-info__item">
+                              <svg focusable="false" aria-hidden="true"><use xlink:href="svg/svg.svg#icon-sad"></use></svg>
+                              <span>Hd chanels</span>
+                             </li>
+                         </ul>
+                      </div>
+                  </div>
+                  <div class="modal-packages-footer">
+                       <button class="green-btn" >
+                        <div class="green-btn__inner">
+                          <svg focusable="false" aria-hidden="true"><use xlink:href="svg/svg.svg#icon-star"></use></svg>
+                          <span>Purchase Full</span>
+                        </div>
+                      </button>
+                      <button class="gray-btn" >
+                        <div class="gray-btn__inner">
+                          Purchase Basic
+                        </div>
+                      </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
 <script>
 
   function validateEmail(email) {
@@ -224,3 +276,6 @@
   document.getElementById('request-form-apple-tv').addEventListener('submit', validateForm)
 
 </script>
+
+
+

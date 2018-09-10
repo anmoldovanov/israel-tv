@@ -280,3 +280,91 @@
   
 .request-default-email-radio
   //margin-bottom 1.2rem
+    
+
+/////////////////////////////
+
+.modal-packages
+  .modal-packages__inner
+    padding-top 2rem
+    padding-bottom 3.5rem
+    +below('xs')
+      padding-left 0
+      padding-right 0
+  .modal__close
+    top: .5rem;
+    right: 2rem;
+    +below('xs')
+      right 0
+  &__title
+    border-bottom 1px solid #e9edec
+    font-size 2rem
+    padding-bottom 1em
+    font-weight bold
+  &__body
+    padding 2rem 0
+    +above('s')
+      display flex
+  &__ill
+    width 50%
+    margin-left auto
+    margin-right auto
+    margin-bottom 1.5rem
+    +above('s')
+      margin-bottom 0
+      width 50%
+      margin-left 0
+      margin-right 0
+    img
+      width 100%
+.modal-packages-info
+  text-align left
+  padding-left 2rem
+  color #193c49
+  &__title
+    font-size 2.4rem
+    margin-bottom .5em
+  &__subtitle
+    font-weight bold
+    font-style italic
+  &__desc
+    margin-bottom 1.2em
+  &__list
+    color #07b8f5
+    font-size 2rem
+    li
+      padding-left 2rem
+      position relative
+      margin-bottom .1em
+      svg
+        position absolute
+        top .7rem
+        left 0
+        height 1.3rem
+        width 1.3rem
+        fill #f35a59
+        
+
+.modal-packages-footer
+  border-top: 1px solid #e9edec
+  padding-top 3rem
+  .green-btn
+    min-width 16rem
+    &__inner
+      font-size 1.6rem
+      font-weight 400
+      padding-left .2em
+      padding-right .2em
+  .gray-btn
+    min-width 14rem
+    margin-left 2.5rem
+    &__inner
+      font-size 1.4rem
+      font-weight 400
+      padding .8em .2em
+    &::before
+      transform translate(.1em,.15em)
+      border-radius: 2.5rem;
+    &:active &__inner
+      transform translate(.1em,.15em)
+    
