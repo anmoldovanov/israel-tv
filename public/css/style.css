@@ -3079,6 +3079,9 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
 .iphone-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__text {
   min-width: 13rem;
 }
+.roku-tv-text-tutorials .text-tutorial__text-inner {
+  display: inline-block;
+}
 .roku-tv-text-tutorials .text-tutorial__desc {
   font-weight: 600;
   color: #4d5f67;
@@ -3092,28 +3095,29 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
 .roku-tv-text-tutorials .text-tutorial__photo {
   margin-bottom: 1rem;
 }
-.roku-tv-text-tutorials .text-tutorials__item:nth-child(1) {
-  display: none;
+.roku-tv-text-tutorials .text-tutorials__item:nth-child(1) .text-tutorial__photo {
+  margin-right: -2rem;
+  width: 33rem;
 }
 .roku-tv-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__photo {
-  margin-left: -4rem;
-  width: 33.587786259541986rem;
+  margin-left: -16rem;
+  width: 45rem;
 }
 .roku-tv-text-tutorials .text-tutorials__item:nth-child(3) .text-tutorial__photo {
-  margin-right: -5rem;
-  width: 36.15384615384615rem;
+  margin-right: -10rem;
+  width: 42rem;
 }
 .roku-tv-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__photo {
-  margin-left: -3rem;
-  width: 31.42857142857143rem;
+  margin-left: -4rem;
+  width: 34rem;
 }
 .roku-tv-text-tutorials .text-tutorials__item:nth-child(5) .text-tutorial__photo {
-  margin-right: -10rem;
-  width: 40.869565217391305rem;
+  margin-right: -1rem;
+  width: 31rem;
 }
 .roku-tv-text-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__photo {
-  margin-left: -12rem;
-  width: 40rem;
+  margin-left: -14rem;
+  width: 42rem;
 }
 .roku-tv-text-tutorials .text-tutorials__item:nth-child(7) .text-tutorial__photo {
   margin-right: -1rem;
@@ -3124,17 +3128,17 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   width: 31.42857142857143rem;
 }
 .roku-tv-text-tutorials .text-tutorials__item:nth-child(9) .text-tutorial__photo {
-  margin-right: -2rem;
-  width: 33.57142857142858rem;
+  margin-right: -6rem;
+  width: 36rem;
 }
 .roku-tv-text-tutorials .text-tutorials__item:nth-child(10) .text-tutorial__photo {
-  margin-left: -6rem;
-  width: 35.2rem;
+  margin-left: -3rem;
+  width: 32rem;
   top: 1rem;
 }
 .roku-tv-text-tutorials .text-tutorials__item:nth-child(11) .text-tutorial__photo {
-  margin-right: -1.5rem;
-  width: 32.41379310344828rem;
+  margin-right: -9rem;
+  width: 40rem;
 }
 .kodi-text-tutorials .text-tutorial__desc {
   font-weight: 600;
@@ -5106,6 +5110,18 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
     margin: 0;
   }
 
+  .roku-tv-text-tutorials .text-tutorial__text {
+    text-align: left;
+  }
+
+  .roku-tv-text-tutorials .text-tutorials__item:nth-child(odd) .text-tutorial__text {
+    text-align: right;
+  }
+
+  .roku-tv-text-tutorials .text-tutorial__text-inner {
+    text-align: right;
+  }
+
   .roku-tv-text-tutorials .text-tutorial {
     height: 36rem;
   }
@@ -5114,39 +5130,47 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
     margin-bottom: 0;
   }
 
+  .roku-tv-text-tutorials .text-tutorials__item:nth-child(1) .text-tutorial__photo {
+    width: 45rem;
+    left: 2rem;
+    margin: 0;
+  }
+
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__photo {
-    width: 42.85714285714286rem;
-    left: 41rem;
+    width: 70rem;
+    left: 12rem;
     margin: 0;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(3) .text-tutorial__photo {
-    width: 47.142857142857146rem;
+    width: 65rem;
     left: 2rem;
     margin: 0;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__photo {
-    width: 46.15384615384615rem;
-    left: 38rem;
+    width: 52rem;
+    left: 32rem;
     margin: 0;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(5) .text-tutorial__photo {
-    width: 57.39130434782609rem;
-    left: 2rem;
+    top: 4rem;
+    width: 45rem;
+    left: 3rem;
     margin: 0;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__photo {
-    width: 60rem;
-    left: 24rem;
+    width: 65rem;
+    left: 17rem;
     margin: 0;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(7) .text-tutorial__photo {
-    width: 48.888888888888886rem;
-    left: 2rem;
+    top: 4rem;
+    width: 44rem;
+    left: 3rem;
     margin: 0;
   }
 
@@ -5157,8 +5181,13 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(9) .text-tutorial__photo {
-    width: 50.76923076923077rem;
-    left: 2rem;
+    width: 33.57142857142858rem;
+  }
+
+  .roku-tv-text-tutorials .text-tutorials__item:nth-child(9) .text-tutorial__photo {
+    top: 3rem;
+    width: 55rem;
+    left: 3rem;
     margin: 0;
   }
 
@@ -5167,8 +5196,8 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(10) .text-tutorial__photo {
-    width: 52.173913043478265rem;
-    left: 32rem;
+    width: 48rem;
+    left: 34rem;
     margin: 0;
     top: 3rem;
   }
@@ -5178,8 +5207,8 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(11) .text-tutorial__photo {
-    width: 47.142857142857146rem;
-    left: 2rem;
+    width: 60rem;
+    left: 3rem;
     margin: 0;
   }
 
@@ -6091,28 +6120,30 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__photo {
-    width: 44.44444444444444rem;
-    left: 31rem;
+    width: 70rem;
+    left: 5rem;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__photo {
-    width: 45.51724137931035rem;
-    left: 30rem;
+    top: 4rem;
+    width: 51rem;
+    left: 24rem;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__photo {
-    width: 59.99999999999999rem;
-    left: 15rem;
+    top: 3rem;
+    width: 65rem;
+    left: 9rem;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(8) .text-tutorial__photo {
     width: 47.142857142857146rem;
-    left: 29rem;
+    left: 27rem;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(10) .text-tutorial__photo {
-    width: 50.76923076923077rem;
-    left: 25rem;
+    width: 47rem;
+    left: 27rem;
   }
 
   .kodi-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__photo {
@@ -6856,44 +6887,57 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
     height: 48rem;
   }
 
+  .roku-tv-text-tutorials .text-tutorials__item:nth-child(1) .text-tutorial__photo {
+    width: 66rem;
+    left: 2rem;
+  }
+
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(2) .text-tutorial__photo {
-    width: 59.25925925925925rem;
-    left: 37rem;
+    top: 5rem;
+    width: 93rem;
+    left: 3rem;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(3) .text-tutorial__photo {
-    width: 67.5rem;
+    top: 4rem;
+    width: 87rem;
     left: 2rem;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(4) .text-tutorial__photo {
-    width: 64.16666666666667rem;
-    left: 33rem;
+    top: 5rem;
+    width: 70rem;
+    left: 27rem;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(5) .text-tutorial__photo {
-    width: 81rem;
-    left: 2rem;
+    top: 4.5rem;
+    width: 63rem;
+    left: 4rem;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(6) .text-tutorial__photo {
+    top: 5rem;
     width: 85rem;
-    left: 11rem;
+    left: 10rem;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(7) .text-tutorial__photo {
-    width: 64.8rem;
-    left: 3rem;
+    top: 5rem;
+    width: 62rem;
+    left: 4rem;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(8) .text-tutorial__photo {
+    top: 4rem;
     width: 64.16666666666667rem;
     left: 31rem;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(9) .text-tutorial__photo {
-    width: 67.5rem;
-    left: 3rem;
+    top: 4rem;
+    width: 75rem;
+    left: 4rem;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(10) .text-tutorial {
@@ -6901,8 +6945,9 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(10) .text-tutorial__photo {
-    width: 66.95652173913044rem;
-    left: 28rem;
+    top: 4rem;
+    width: 60rem;
+    left: 35rem;
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(11) .text-tutorial {
@@ -6910,8 +6955,9 @@ a.home-sidebar-tablist__tab.tablist-tab-active {
   }
 
   .roku-tv-text-tutorials .text-tutorials__item:nth-child(11) .text-tutorial__photo {
-    width: 62.30769230769231rem;
-    left: 3rem;
+    top: 4rem;
+    width: 75rem;
+    left: 4rem;
   }
 
   .kodi-text-tutorials .text-tutorial {
